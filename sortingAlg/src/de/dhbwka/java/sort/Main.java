@@ -5,10 +5,11 @@ import de.dhbwka.java.sort.helper.RandomArray;
 
 public class Main {
 
-    private static void sort(int[] list){
+    private static void sort(int[] list) {
         // SelectionSort.sort(list);
         // BubbleSort.sort(list);
-        InsertSort.sort(list);
+        // SelectionSort.sort(list);
+        QuickSort.sort(list);
     }
 
     public static void main(String[] args) {
@@ -21,6 +22,6 @@ public class Main {
         sort(list);
         long duration = System.nanoTime() - start;
         ConsolePrint.printArray("Nacher", list);
-        System.out.printf("Algorithmus hat %.3fms gebraucht.", duration/1000000f);
+        System.out.printf("Algorithmus hat %.3fms gebraucht.", duration / 1000000f);
     }
 }

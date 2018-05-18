@@ -6,6 +6,7 @@ import com.sun.istack.internal.NotNull;
  * BubbleSort Algorithmus
  */
 public class BubbleSort {
+
     public static void sort(@NotNull int[] array) {
 
         boolean wasSwitched;
@@ -14,7 +15,6 @@ public class BubbleSort {
             wasSwitched = false;
 
             // ... Gehe einmal durch das gesamte Array ...
-
             for (int index = 0; index <= array.length - 2; index++) {
                 if (array[index] > array[index + 1]) {
                     // ... und tausche mit dem nächsten Element, falls nötig ...

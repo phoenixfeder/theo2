@@ -1,11 +1,15 @@
 package de.dhbwka.java.sort;
 
+import com.sun.istack.internal.NotNull;
+
 /**
  * InsertSort Algorithmus
  */
 public class InsertSort {
-    public static void sort(int[] array) {
+    public static void sort(@NotNull int[] array) {
+
         int temp;
+
         // Für jeden Eintrag im Array (außer der erste) ...
         for (int index = 1; index < array.length; index++) {
             // ... merke den Wert ...
