@@ -1,12 +1,10 @@
 package de.dhbwka.java.sort;
 
-import de.dhbwka.java.sort.helper.ConsolePrint;
-
 /**
  * InsertSort Algorithmus
  */
 public class InsertSort {
-    public static void sort(int[] array){
+    public static void sort(int[] array) {
         int temp;
         // Für jeden Eintrag im Array (außer der erste) ...
         for (int index = 1; index < array.length; index++) {

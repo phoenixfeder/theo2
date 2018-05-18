@@ -6,6 +6,7 @@ import java.util.Random;
  * Helperklasse für das erstellen eines Arrays mit zufälligen int-Werten
  */
 public class RandomArray {
+
     /**
      * Erstellt ein Array der Länge length mit zufälligen int-Werten mit dem Zufalls-Seed seed
      *
