@@ -1,14 +1,13 @@
 package de.dhbwka.java.sort;
 
 import com.sun.istack.internal.NotNull;
-import de.dhbwka.java.sort.helper.ConsolePrint;
 
 /**
  * Selectionsort Algorithmus
  */
 public class SelectionSort {
 
-    public static int[] selectionSort(@NotNull int[] array) {
+    public static void sort(@NotNull int[] array) {
 
         // Für jeden Eintrag im Array ...
         for (int pointer = 0; pointer < array.length; pointer++) {
@@ -25,9 +24,7 @@ public class SelectionSort {
             int temp = array[minIndex];
             array[minIndex] = array[pointer];
             array[pointer] = temp;
-            ConsolePrint.printArray("Step", array);
+            //ConsolePrint.printArray("Step", array);
         }
-
-        return array;
     }
 }
